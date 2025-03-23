@@ -1,0 +1,58 @@
+.container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .city-list {
+    list-style: none;
+    padding: 0;
+    width: 300px;
+    margin: auto;
+  }
+  
+  .city-item {
+    margin-bottom: 10px;
+  }
+  
+  .city-button {
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .city-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .state-list {
+    margin-top: 5px;
+    list-style: none;
+    padding: 10px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .state-item {
+    padding: 5px;
+    font-size: 16px;
+    color: #333;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .state-item:last-child {
+    border-bottom: none;
+  }
+  
