@@ -1,0 +1,61 @@
+@import "mixin";
+@import "variable";
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+    // 10px  ,default value of font size in root element is 16 px , px is not responsive but rem is responsive with diffrent screen size 
+   //why rem : 1Accessibility: Easy to resize by changing the root font size. 2Consitency 3 responsive design font-size :16px meand 1rem is 16px
+    font-size: 16.5%;  
+}
+
+
+// let you feel this propert will use so many time then you need to make one common VARIABLE And FUNCTION using mixin
+//without parameter passing
+// @mixin fontStyle{
+//     color:$color;
+//     letter-spacing:$letter-spacing;
+//     font-family:$font-family;
+// }
+
+
+.main_header{
+    @include flexprob;
+width:100vw;
+height: 100vh;
+background-color:$bg-color;
+// 1rem = 10px , 5*10=50px
+font-size: 5rem + 5rem;
+
+h1{
+    // color:$color;
+    // letter-spacing:$letter-spacing;
+    // font-family:$font-family;
+    @include fontStyle(1.5rem,$color);
+    // if name is too long then you don't need to define name instead of name you can use underscore it represent the parent name 
+    &:hover{
+        color:$color-hover;
+        &::after{
+            content : " ***********"
+        }
+    }
+  
+}
+
+p{
+    @include fontStyle(0.3rem,gray);
+    // color:$color;
+    // letter-spacing:$letter-spacing;
+    // font-family:$font-family;
+    &:hover{
+        color:$color-hover;
+    
+
+    }
+}
+
+}
+

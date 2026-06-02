@@ -1,0 +1,14 @@
+@mixin flexprob{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+//with parameter passing
+@mixin fontStyle($letterSpacing,$color){
+    color:$color;
+    letter-spacing:$letterSpacing;
+    font-family:$font-family;
+}

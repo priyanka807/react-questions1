@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16.5%;
+}
+
+.main_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(182, 245, 245);
+  font-size: 10rem;
+}
+.main_header h1 {
+  color: red;
+  letter-spacing: 1.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main_header h1:hover {
+  color: rgb(184, 135, 135);
+}
+.main_header h1:hover::after {
+  content: " ***********";
+}
+.main_header p {
+  color: gray;
+  letter-spacing: 0.3rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+.main_header p:hover {
+  color: rgb(184, 135, 135);
+}/*# sourceMappingURL=main.css.map */
